@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Network Monitoring Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Smart Network Monitoring Dashboard</h1>
+
+<div class="dashboard">
+
+<div class="card">
+<h2>Primary Router</h2>
+<p>Status: <span id="primaryStatus" class="active">ACTIVE</span></p>
+<button class="stop-btn" onclick="failPrimary()">Simulate Failure</button>
+</div>
+
+<div class="card">
+<h2>Backup Router</h2>
+<p>Status: <span id="backupStatus" class="standby">STANDBY</span></p>
+<button class="backup-btn" onclick="activateBackup()">Activate Backup</button>
+</div>
+
+<div class="card">
+<h2>Internet Link</h2>
+<p>Status: <span id="internetStatus" class="active">CONNECTED</span></p>
+<button class="start-btn" onclick="restoreInternet()">Restore</button>
+</div>
+
+<div class="card">
+<h2>Network Performance</h2>
+<p>Latency: <span id="latency">--</span></p>
+<p>Packet Loss: <span id="packetLoss">--</span></p>
+<p>Bandwidth: <span id="bandwidth">--</span></p>
+<p>Status: <span id="networkStatus">--</span></p>
+</div>
+
+<div class="card alert-card">
+<h2>⚠ Network Alerts</h2>
+<p id="alertText">No alerts</p>
+</div>
+
+</div>
+
+<footer>Real-Time Network Monitoring</footer>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

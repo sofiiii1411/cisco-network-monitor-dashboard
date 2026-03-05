@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* Background Theme */
+
+body{
+background: linear-gradient(90deg,#7b2ff7,#4facfe,#00f2fe);
+min-height:100vh;
+text-align:center;
+color:white;
+}
+
+/* Title */
+
+h1{
+padding:30px;
+font-size:34px;
+letter-spacing:1px;
+}
+
+/* Dashboard Layout */
+
+.dashboard{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* Glass Cards */
+
+.card{
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(15px);
+width:270px;
+margin:20px;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+}
+
+/* Status Colors */
+
+.active{
+color:#00ffcc;
+font-weight:bold;
+}
+
+.standby{
+color:#ffd700;
+font-weight:bold;
+}
+
+.down{
+color:#ff4d4d;
+font-weight:bold;
+}
+
+/* Buttons */
+
+button{
+margin-top:15px;
+padding:12px 20px;
+border:none;
+border-radius:25px;
+font-size:14px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Start Button */
+
+.start-btn{
+background:linear-gradient(45deg,#00ffcc,#00ff88);
+color:black;
+box-shadow:0 0 12px #00ffcc;
+}
+
+.start-btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00ffcc;
+}
+
+/* Backup Button */
+
+.backup-btn{
+background:linear-gradient(45deg,#ffd700,#ff9d00);
+color:black;
+box-shadow:0 0 12px #ffd700;
+}
+
+.backup-btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #ffd700;
+}
+
+/* Stop Button */
+
+.stop-btn{
+background:linear-gradient(45deg,#ff4d4d,#ff0000);
+color:white;
+box-shadow:0 0 12px #ff4d4d;
+}
+
+.stop-btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #ff4d4d;
+}
+
+/* NETWORK ALERT CARD */
+
+.alert-card{
+background: linear-gradient(135deg,#ff512f,#ff9966);
+color:white;
+border:2px solid rgba(255,255,255,0.3);
+box-shadow:0 0 20px rgba(255,80,80,0.6);
+animation: alertGlow 2s infinite alternate;
+}
+
+@keyframes alertGlow{
+0%{box-shadow:0 0 15px rgba(255,80,80,0.5);}
+100%{box-shadow:0 0 35px rgba(255,80,80,1);}
+}
+
+footer{
+margin-top:40px;
+padding:15px;
+font-size:14px;
+opacity:0.8;
+}
